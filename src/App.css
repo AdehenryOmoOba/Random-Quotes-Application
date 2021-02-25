@@ -1,12 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 .App {
-  width: 100vw;
-  height: 100vh;
   text-align: center;
-  background-color: yellow;
+}
+
+.App .App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.App .App-header #quote-box {
+  line-height: 50px;
+  font-weight: 700;
+  font-size: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  color: #282c34;
+  min-height: 40vh;
+  width: 50vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.App .App-header #quote-box #author {
+  text-align: end;
+}
+
+.App .App-header #quote-box .tweet-new {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.App .App-header #quote-box .tweet-new #new-quote {
+  width: 150px;
+  text-align: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  padding: 10px 20px;
+  background-color: #282c34;
+  color: #fff;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.App .App-header #quote-box .tweet-new #tweet-quote {
+  font-size: 25px;
+  text-align: center;
+  background-color: #282c34;
+  color: #fff;
+  width: 60px;
+  height: 43px;
+  line-height: 43px;
+  border-radius: 5px;
+}
+
+@media (max-width: 601px) {
+  .App .App-header #quote-box {
+    min-height: 50vh;
+    width: 80vw;
+  }
 }
